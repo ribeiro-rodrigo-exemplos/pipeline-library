@@ -11,7 +11,7 @@ class Utilities implements Serializable{
         steps.echo "${args} --- "
     } */
 
-    static mvn(script,args){
+    static def mvn(script,args){
         script.echo "Print -> ${args}"
         script.sh "${script.tool 'localMaven'}/bin/mvn -v"
     }
